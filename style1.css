@@ -12,7 +12,8 @@ img
     flex-direction: row;
     justify-content: left;
 }
-.links
+/*liens haut de page*/
+nav
 {
     display: flex;
     flex-direction: row;
@@ -21,6 +22,15 @@ img
      margin-top: -50px;
      margin-left: 60%;
 }
+a
+{
+    color: #0065ff;
+    text-decoration: none;
+}
+a:hover
+{
+    text-decoration: underline;
+}
 .e-header
 {
 margin-top: 50px;
@@ -28,19 +38,51 @@ margin-top: 50px;
 .transparent
 {
     opacity: 0.5;
-    margin-top: -20px;
+    font-size: 1.2em;;
 }
+/*Formulaire*/
+
 input[value="Rechercher"]
 {
     background-color: #0065ff;
     color: white;
     cursor: pointer; 
+    border: 1px solid #f2f2f2;
     border-radius: 0px 10px 10px 0px;
+    margin-left: -4px;
 }
+input
+{
+    font-size: 1.4em; 
+    border: 1px solid #f2f2f2;
+}
+
+/* Icone en noir*/
+.form i
+ {
+    color: black;
+    border: 10px solid #f2f2f2;
+    border-radius: 2em 0em 0em 2em; 
+    margin-right: -2px;
+}
+   
+/* Icone en bleu*/
+.fas
+{
+    color: #0065ff;
+}
+/*Filtres*/
 .filter
 {
-    display: flex;
-    justify-content: space-between;
+   display: flex; 
+   flex-direction: row;
+   justify-content: space-between;
+   align-content: flex-start;
+}
+.filter-economique
+{
+    border-radius: 2em;
+    border-color: 1px solid black;
 }
 main
 {
@@ -49,22 +91,48 @@ main
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    margin: 20px;
 }
-.a
+/*Section Hébergements*/
+#hébergements
 {
     border: 1px solid #f2f2f2;
-    width: 70%;
+    width: 60%;
     background-color:#f2f2f2;
     border-radius: 10px;
 }
-.b
+
+
+
+figure
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    border-width:1px; 
+    border-style:solid; 
+    border-color:black;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    padding: 5px;
+    margin: 20px;
+}
+figcaption
+{
+  display: flex;
+  align-content: space-between;  
+}
+/*Section Populaires*/
+#populaires
 {
     border: 1px solid #f2f2f2;
     width: 30%;
     background-color:#f2f2f2;
     border-radius: 10px;
 }
-.c
+/*Section Activités*/
+#activités
 {
     align-content: flex-end;
     border: 1px solid #f2f2f2;
@@ -80,7 +148,6 @@ footer
     justify-content: flex-start;
     justify-content: space-around;
     width: 100%;
-
 }
 
 
