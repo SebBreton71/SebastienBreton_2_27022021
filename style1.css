@@ -2,7 +2,7 @@
 body
 {
     font-family: 'Raleway', sans-serif;
-    max-width: 1400px;
+    margin-left: 50px;
 }
 
 /* Header */
@@ -82,29 +82,40 @@ input
    display: flex; 
    flex-direction: row;
    justify-content: space-between;
-   align-content: flex-start;
+   align-items: flex-start;
+   font-size: 1.4em;
+}
+.filter i
+{
+    border:1px solid #deebff;
+    border-radius: 90px;
+    padding : 20px 20px;
+    background: #deebff;
 }
 .filter-economique
 {
-    border-radius: 2em;
-    border-color: 1px solid black;
+    border: 1px solid black;
+    border-radius: 90px;   
 }
+
 main
 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
-    margin: 20px;
+    
 }
 /*Section Hébergements*/
 #hébergements
 {
+    display: block;
     border: 1px solid #f2f2f2;
     width: 60%;
     background-color:#f2f2f2;
     border-radius: 10px;
+    text-align:left;
+   
 }
 
 
@@ -112,22 +123,21 @@ main
 figure
 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
+    width: 30%;
     
-    border-width:1px; 
-    border-style:solid; 
-    border-color:black;
+    border: 1px solid #f2f2f2;
     background-color: white;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px;
     padding: 5px;
     margin: 20px;
 }
-figcaption
+/*figcaption:hover
 {
-  display: flex;
-  align-content: space-between;  
+    color: #deebff;
 }
+
 /*Section Populaires*/
 #populaires
 {
