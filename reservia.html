@@ -8,97 +8,137 @@
 		<link rel="stylesheet" href="style1.css"/>
 	<!--police-->
 		<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
 	<!--titre page-->	
 		<title>Reservia</title>
 	</head>
 		<body>
-			<header>
-	<!--logo-->				
-			<img src="images/logo/Reservia-logo.png" alt="Logo Reservia" style="
-			margin-bottom: 20px;"/>
+			<header id="header">
+			<!--logo-->				
+				<img src="images/logo/Reservia-logo.png" alt="Logo Reservia" style="margin-bottom: 20px;"/>
 				
-	<!--liens haut de page-->
-				<section>				
-					<nav class="links">
-						<a href="#hébergements">Hébergements</a>
-						<a href="#activités" style= "color: black">Activités</a>
-						<a href="#">S'inscrire</a>
-					</nav>
-				</section>
+			<!--liens haut de page-->		
+				<nav class="header-links">
+					<ul>
+						<li><a href="#hébergements">Hébergements</a></li>
+						<li><a href="#activités" style= "color: black">Activités</a></li>
+						<li><a href="#">S'inscrire</a></li>
+					</ul>
+				</nav>
 			</header>
-	<!--titre avant formulaire-->		
-					<h1 class="e-header">Trouvez votre hébergement pour des vacances de rêve</h1>
-                		<h2 class="transparent">En plein centre ville ou en pleine nature</h2>
-	<!--formulaire-->		
-			<form method="post" action="traitement.php">
-				<p class="form">
-					<label for="ville">	<i class="fas fa-map-marker-alt"></i></label>
-						<input  type="search" name="button" placeholder="Marseille, France"/>
-					    <input  type="submit"  value="Rechercher"/>	
-				</p>
-			</form>
-	<!--filter--> 
-					<div class="filter">
+	<!--titre avant formulaire-->	
+			<main>
+			<section>
+				<h1 class="e-header">Trouvez votre hébergement pour des vacances de rêve</h1>
+                <h2 class="transparent">En plein centre ville ou en pleine nature</h2>
+				<!--formulaire-->		
+				<form method="post" action="traitement.php">
+					<div class="form">
+						<i class="fas fa-map-marker-alt"></i>
+						<input type="search" name="button" placeholder="Marseille, France"/>
+						<input type="submit" value="Rechercher"/>	
+					</div>
+				</form>
+				<!--filter--> 
+				<div class="filter">
 					<p>Filtres</p>
-							<div class="filter-economique"><p><i class="fas fa-money-bill-wave"></i>Economique</p></div>
-							<div class="filter-familial"><p><i class="fas fa-child"></i>Familial</p></div>
-							<div class="filter-familial"><p><i class="fas fa-heart"></i>Romantique</p></div>
-							<div class="filter-animaux"><p><i class="fas fa-dog"></i>Animaux autorisés</p></div>
-					</div>	
+					<ul class="filter-elements">
+						<li class="filter-element"><i class="fas fa-money-bill-wave"></i><span>Economique</span></li>
+						<li class="filter-element"><i class="fas fa-child"></i><span>Familial</span></li>
+						<li class="filter-element"><i class="fas fa-heart"></i><span>Romantique</span></li>
+						<li class="filter-element"><i class="fas fa-dog"></i><span>Animaux autorisés</span></li>
+					</ul>
+				</div>	
 
-				<h2 class="transparent"><i class="fas fa-info" style="border-radius:50%"></i>
-					 Plus de 500 logements sont disponibles dans cette ville</h2>
-		<main>
-				<section id="hébergements">
-					<div>
-							<h2>Hébergements à Marseille</h2>
-						
-						<div>
-							<figure>
-								<img src="images/cannebière.png" alt="Cannebière Marseille" /> 
-									<figcaption><strong>Auberge la Cannebière</strong> <br/><br>Nuit à partir de <strong>25€</strong> <br/><br>
-										<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-										<i class="fas fa-star" style= "color:#f2f2f2"></i> </figcaption></figure>
-							<figure>
-								<img src="images/hotelduport.png" alt="Hotel du port Marseille" />
-									<figcaption>Hôtel du port <br/>Nuit à partir de 52€ <br/></figcaption></figure>
+				<h2 class="transparents"><i class="fas fa-info"></i>
+					 Plus de 500 logements sont disponibles dans cette ville
+				</h2>
+			</section>	
+			<section id="hébergements">
+				<div class="heb">
+						<h2>Hébergements à Marseille</h2>
+					
+					<div class="hebs">
+						<figure>
+							<img src="images/cannebière.png" alt="Cannebière Marseille"> 
+								<figcaption><strong>Auberge la Cannebière</strong> <br>Nuit à partir de <strong>25€</strong> <br><br>
+									<i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" style="color:#f2f2f2" aria-hidden="true"></i> </figcaption></figure>
+						<figure>
+							<img src="images/hotelduport.png" alt="Hotel du port Marseille">
+								<figcaption>Hôtel du port <br>Nuit à partir de <strong> 52€ </strong><br><br>
+									<i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i> </figcaption></figure>
 
-							<figure>
-								<img src="images/hlesmouettes.png" alt="Hotel Mes Mouettes Marseille" />
-									<figcaption>Hôtel Les mouettes <br/>Nuit à partir de 76€ <br/></figcaption></figure>
+						<figure>
+							<img src="images/hlesmouettes.png" alt="Hotel Mes Mouettes Marseille">
+								<figcaption>Hôtel Les mouettes <br>Nuit à partir de <strong> 76€ </strong><br><br>
+									<i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" style="color:#f2f2f2" aria-hidden="true"></i> </figcaption></figure>
 
-							<figure>
-								<img src="images/hlamer.png" alt="Hotel de la Mer Marseille" />
-									<figcaption>Hôtel de la mer <br/>Nuit à partir de 46€ <br/></figcaption></figure>
-									
-							
-						</div></div>			
-				</section>
-				<section id="populaires">
-					<h1>Les plus populaires</h1>
+						<figure>
+							<img src="images/hlamer.png" alt="Hotel de la Mer Marseille">
+								<figcaption>Hôtel de la mer <br>Nuit à partir de <strong> 46€ </strong><br><br>
+									<i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" style="color:#f2f2f2" aria-hidden="true"></i>
+									<i class="fas fa-star" style="color:#f2f2f2" aria-hidden="true"></i> </figcaption></figure>
+
+						<figure>
+							<img src="images/Auberge-le-panier.png" alt="Auberge le PanierMarseille">
+								<figcaption>Auberge le Panier <br>Nuit à partir de <strong> 23€ </strong><br><br>
+									<i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" style="color:#f2f2f2" aria-hidden="true"></i> </figcaption></figure>
+
+						<figure>
+							<img src="images/Hotel-chez-Amina.png" alt="Hotel chez Amina Marseille">
+								<figcaption>Hôtel chez Amina <br>Nuit à partir de <strong> 96€ </strong><br><br>
+									<i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star"  aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i> </figcaption></figure>
+											
+											
+								
 						
-				</section>
-				<section id="activités">
-					<h1>Activités à Marseille</h1>
-						
-				</section>
+					</div>
+				</div>
+				<aside id="populaires">
+					<h2>Les plus populaires</h2>
+				</aside>		
+			</section>
+			<section id="activités">
+				<h2>Activités à Marseille</h2>
+					
+			</section>
 		</main>		
 	<!--end-page-->
-				<footer>
-<p class="footer-left"><strong>A propos</strong><br />
-							Fonctionnement du site<br />
-							Conditions générales de vente<br />
-							Données et confidentialité</p>
-
-<p class="footer-center"><strong>Nos hébergements</strong><br />
-							Charte qualité<br />
-							Soumettre votre hôtel</p>
-							
-<p class="footer-right"><strong>Assistance</strong><br />
-							Centre d'aide<br />
-							Nous contacter</p>
-				</footer>
+		<footer id="footer">
+			<div class="footer-column">
+				<p><strong>A propos</strong><p>
+				<ul>
+					<li>Fonctionnement du site</li>
+					<li>Conditions générales de vente</li>
+					<li>Données et confidentialité</li>
+				</ul>			
+			</div>
+			<div class="footer-column">
+				<p><strong>Nos hébergements</strong><p>
+				<ul>
+					<li>Charte qualité</li>
+					<li>Soumettre votre hôtel</li>
+				</ul>			
+			</div>
+			<div class="footer-column">
+				<p><strong>Assistance</strong><p>
+				<ul>
+					<li>Centre d'aide</li>
+					<li>Nous contacter</li>
+				</ul>			
+			</div>
+		</footer>
 			
 		</body>
 </html>
