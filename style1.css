@@ -1,4 +1,4 @@
-/* définition police Raleway*/
+/* police Raleway */
 body
 {
     font-family: 'Raleway', sans-serif;
@@ -7,7 +7,7 @@ body
 /* GENERAL */
 header,
 main{
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -28,8 +28,7 @@ main{
     justify-content: space-between;
     list-style: none;
 }
-/*liens haut de page*/
-
+/* top links */
 a
 {
     color: #0065ff;
@@ -39,13 +38,13 @@ a:hover
 {
     text-decoration: underline;
 }
-
+/* MAIN */ 
 .transparent
 {
     opacity: 0.5;
     font-size: 17px;;
 }
-/*Formulaire*/
+/*Form*/
 
 input[value="Rechercher"]
 {
@@ -63,8 +62,7 @@ input
     border: 1px solid #f2f2f2;
     padding: 10px 10px;
 }
-
-/* Icone en noir*/
+/* black icon */
 .form i
  {
     font-size: 17px;
@@ -74,14 +72,13 @@ input
     border-radius: 10px 0px 0px 10px; 
     margin-right: -4px;
     padding: 10px 10px;
-}
-   
-/* Icone en bleu*/
+}  
+/* blue icon */
 .fas
 {
     color: #0065ff;
 }
-/*Filtres*/
+/* FILTER */
 .filter
 {
    display: flex;
@@ -101,7 +98,6 @@ input
     align-items: center;
     justify-content: center;
 }
-
 .filter-elements
 {
     display: flex;
@@ -110,12 +106,10 @@ input
     list-style: none;
     flex-wrap: wrap;
 }
-
 .filter-element
 {
     margin-right: 20px;
 }
-
 .filter-element span
 {
     border: 1px solid #f2f2f2;
@@ -129,6 +123,7 @@ input
 {
     opacity: 0.5;
     font-size: 17px;
+    margin-bottom: 40px;
 }
 .transparents i
 {
@@ -141,53 +136,110 @@ input
     padding-left: 7px;
     margin-right: 10px;
 }
-
-
-/*Section Hébergements*/
 #hébergements
 {
-    
-    border: 1px solid #f2f2f2;
-    background-color:#f2f2f2;
-    border-radius: 20px;
-    text-align:left; 
-    width: 80%;  
+    display:flex;}   
+/* PRINCIPAL SECTION */
+#he h2{
+    padding-left: 20px;
+    margin-top: 40px;
 }
-
-.hebs{
-    width: 60%;
+#he{
     display: flex;
     flex-wrap: wrap;
+    width: 800px;
+    height: 600px;
+    background-color:#f2f2f2;
+    border-radius: 20px;
+    text-align:left;
+    margin-right: 40px; 
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#he i{
+    font-size: 10px;
+}
+.hebs {  
+    display: flex;
+    flex-wrap: wrap;
+    background-color:#f2f2f2;
+    border-radius: 20px;    
 }
 .hebs img{
-    width: 240px;
-    height: 120px;
+    width: 210px;
+    height: 100px;
+    border-radius: 20px 20px 0 0;
 }
-/*Section Populaires*/
+.hebs figure{
+    border-radius: 20px;
+    margin-top: 0px;
+}
+.hebs figcaption{
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 10px;
+    border-radius: 0 0 20px 20px;
+}
+/* ASIDE SECTION */
 #populaires
 {
-    border: 1px solid #f2f2f2;
-    width: 30%;
+    width: 400px;
+    height: 600px;
     background-color:#f2f2f2;
-    border-radius: 10px;
+    border-radius: 20px;
+    text-align:left;
+    padding-left: 20px;
+    padding-right: 0px;
 }
-/*Section Activités*/
+#populaires i{
+    font-size: 10px;
+    padding-top: 20px;
+}
+#populaires h2{
+    padding-left: 20px;
+    margin-top: 40px;
+}
+#populaires h2 i{
+    padding-left: 80px;
+    color: black;
+    font-size: 17px;
+}
+.pops{
+    display: block;
+}
+.pops figure{
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+} 
+.pops figure img{
+width: 120px;
+height: 120px;
+    border-radius: 20px 0 0 20px;
+}
+.pops figcaption{
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 14px;
+    width: 180px;
+    height: 120px;
+    border-radius: 0 20px 20px 0;
+    background-color: white;
+}
+/* ACTIVITIES SECTION */
 #activités
 {
     align-content: flex-end;
-    border: 1px solid #f2f2f2;
     width: 100%;
-    background-color:#f2f2f2;
-    border-radius: 10px;
+    margin-top: 40px;
 }
 figure
 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 25%;
-    
-    border: 1px solid #f2f2f2;
+    width: 26%;
     background-color: white;
     border-radius: 10px;
     padding: 5px;
@@ -195,10 +247,8 @@ figure
 }
 figcaption{
     background-color: white;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding-top: 10px;
 }
-
 footer
 {
     background-color:#f2f2f2;
@@ -208,3 +258,4 @@ footer
     justify-content: space-around;
     width: 100%;
 }
+
