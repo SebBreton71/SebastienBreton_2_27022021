@@ -330,6 +330,10 @@ input
     text-decoration: none;
 }
 
+.bestpopular p{
+    margin:0;
+}
+
 /* ACTIVITIES SECTION */
 
 #secondpart
