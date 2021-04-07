@@ -1,7 +1,6 @@
 /* police Raleway */
 
-body
-{
+body{
     font-family: 'Raleway', sans-serif;
 }
 
@@ -9,40 +8,34 @@ body
 
 header,
 main{
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
 /* Header */
 
-#header
-{
+#header{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header-links
-{
+.header-links{
     width: 400px;
     max-width: 400px;
 }
 
-.header-links ul
-{
+.header-links ul{
     display: flex;
     justify-content: space-between;
     list-style: none;
 }
 
-.header-links ul li
-{
+.header-links ul li{
     position: relative;
 }
 
-
-.header-links-element:hover:before
-{
+.header-links-element:hover:before{
     content: "";
     width: 100%;
     height: 2px;
@@ -53,22 +46,19 @@ main{
     left: 0;
 }
 
-.header-links a
-{
+.header-links a{
     color: #0065ff;
     text-decoration: none;
 }
 
 /*Form*/
 
-.e-headersubtile
-{
+.e-headersubtile{
     font-size: 15px;
     font-weight: lighter;
 }
 
-input[value="Rechercher"]
-{
+input[value="Rechercher"]{
     background-color: #0065ff;
     color: white;
     cursor: pointer; 
@@ -78,8 +68,7 @@ input[value="Rechercher"]
     padding: 10px 10px;
 }
 
-input
-{
+input{
     font-size: 17px; 
     border: 1px solid #f2f2f2;
     padding: 10px 10px;
@@ -87,8 +76,7 @@ input
 
 /* black icon */
 
-.form i
- {
+.form i{
     font-size: 17px;
     color: black;
     border: 1px solid #f2f2f2;
@@ -100,27 +88,23 @@ input
 
 /* blue icon */
 
-.fas
-{
+.fas{
     color: #0065ff;
 }
 
 /* FILTER */
 
-.filter
-{
+.filter{
    display: flex;
    font-size: 17px;
    align-items: center;
 }
 
-.filter p, span
-{
+.filter p, span{
     font-weight: bold;
 }
 
-.filter i
-{
+.filter i{
     border: 1px solid #deebff;
     border-radius: 50%;
     padding: 12px 10px;
@@ -133,28 +117,24 @@ input
     justify-content: center;
 }
 
-.filter-elements
-{
+.filter-elements{
     display: flex;
     justify-content: space-between;
     margin-left: 20px;
     list-style: none;
     flex-wrap: wrap;
-
 }
 
 .filter-elements li a:hover{
     background-color: #deebff;
 }
 
-.filter-element
-{
+.filter-element{
     margin-right: 20px;
 }
 
-.filter-element span
-{
-    border: 1px solid #f2f2f2;
+.filter-element span{
+    border: 3px solid #f2f2f2;
     border-left: none;
     padding: 9px 17px 9px 17px;
     margin-left: -10px;
@@ -162,15 +142,13 @@ input
     border-bottom-right-radius: 20px;
 }
 
-.filter-continued
-{
+.filter-continued{
     font-size: 15px;
     font-weight: lighter;
     margin-bottom: 30px;
 }
 
-.filter-continued i
-{
+.filter-continued i{
     font-size: 13px;
     border: 1px solid #f2f2f2;
     border-radius: 15px;
@@ -181,20 +159,18 @@ input
     margin-right: 10px;
 }
 
-#firstpart
-{
+#first-part{
     display:flex;
 }  
 
-#hosting h2
-{
+#hosting h2{
     padding-left: 20px;
     margin-top: 30px;
     margin-bottom: 20px;
+    height: 37px;
 }
 
-#hosting
-{
+#hosting{
     display: flex;
     flex-wrap: wrap;
     background-color:#f2f2f2;
@@ -202,6 +178,7 @@ input
     text-align:left;
     margin-right: 40px; 
     padding-right: 10px;
+    padding-left: 20px;
     width: 70%;
 }
 
@@ -209,63 +186,62 @@ input
     font-size: 10px;
 }
 
-.leftframe
-{
+.left-frame{
     margin-top: -30px;
 }
 
-.hostingsheet
-{  
+.hosting-sheet{  
     display: flex;
     flex-wrap: wrap;
     background-color:#f2f2f2;
-    border-radius: 20px;   
+    border-radius: 20px;  
 }
 
-.hostingsheet img{
+.hosting-sheet img{
     object-fit: cover;
-    width: 100%;
+    width: 205px;
     height: 100px;
     border-radius: 20px 20px 0 0;
 }
 
-.hostingsheet figure{
+.hosting-sheet figure{
     border-radius: 20px;
+    box-shadow: 1px 1px 15px rgb(111, 111, 111); 
 }
 
-.hostingsheet figcaption{
+.hosting-sheet figcaption{
     font-size: 14px;
     line-height: 20px;
     padding-left: 10px;
+    padding-top: 10px;
     border-radius: 0 0 20px 20px;
 }
 
-.hostingsheet h4{
+.hosting-sheet h4{
     margin: 0;
 }
 
-.hostingsheet p {
+.hosting-sheet p{
     margin: 5px 0;
 }
-.hostingsheet a
-{
+.hosting-sheet a{
     color: inherit;
     text-decoration: none;
 }
 
-.viewmore{
+.view-more{
     padding-left: 20px;
-   font-weight:bold; 
+    font-weight:bold; 
+    text-align: left;
 }
-.hostingsheet p a
-{
+.hosting-sheet p a{
     color: inherit;
     text-decoration: none;
 }
+
 /* ASIDE SECTION */
 
-#popular
-{
+#popular{
     width: 30%;
     background-color:#f2f2f2;
     border-radius: 20px;
@@ -274,8 +250,7 @@ input
     padding-right: 20px;
 }
 
-#popular i
-{
+#popular i{
     font-size: 10px;
     padding-top: 20px;
 }
@@ -292,30 +267,28 @@ input
     font-size: 17px;
 }
 
-.bestpopular
-{
+.best-popular{
     display: block;
 }
 
-.bestpopular figure
-{
+.best-popular figure{
     width: 100%;
+    width: 320px;
     flex-wrap: nowrap;
     flex-direction: row;
     border-radius: 20px;
     margin-bottom: 30px;
+    box-shadow: 1px 1px 15px rgb(111, 111, 111);
 } 
 
-.bestpopular figure img
-{
+.best-popular figure img{
     width: 150px;
     height: 130px;
     border-radius: 20px 0 0 20px;
     object-fit: cover;
 }
 
-.bestpopular figcaption
-{
+.best-popular figcaption{
     padding-top: 10px;
     padding-left: 20px;
     font-size: 14px;
@@ -324,52 +297,195 @@ input
     border-radius: 0 20px 20px 0;
 }
 
-.bestpopular a
-{
+.best-popular a{
     color: inherit;
     text-decoration: none;
 }
 
-.bestpopular p{
+.best-popular p{
     margin:0;
 }
 
 /* ACTIVITIES SECTION */
 
-#secondpart
+#second-part
 {
-    align-content: flex-end;
     width: 100%;
     margin-top: 40px;
 }
 
-#secondpart h2{
+#second-part h2{
     padding-left: 20px;
 }
 
-figure
-{
+.activities{
+    outline : 1px dashed black;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-between;
+    height: 450px;
+    width: 100%;
+}
+
+.activities h3{
+    font-size: 12px;
+}
+
+.activities a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.activity-element1 figure{
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+.activity-element1 img{
+    width:100%;
+    height: 300px;
+    border-radius: 20px 20px 0 0px;
+    object-fit: cover;
+}
+
+.activity-element1 figcaption{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    border-radius: 0 0 20px 20px;
+    background-color: brown;
+    width: 100%;
+    height: 40px;
+}
+
+.activity-element2 figure{
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+.activity-element2 img{
+    width: 100%;
+    height: 140px;
+    border-radius: 20px 20px 0 0px;
+    object-fit: cover;
+}
+
+.activity-element2 figcaption{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    border-radius: 0 0 20px 20px;
+    background-color: blueviolet;
+    width: 100%;
+    height: 40px;
+}
+
+.activity-element3 figure{
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+.activity-element3 img{
+    width: 100%;
+    height: 100px; 
+    border-radius: 20px 20px 0 0px;
+    object-fit: cover;
+}
+
+.activity-element3 figcaption{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    border-radius: 0 0 20px 20px;
+    background-color: yellowgreen;
+    width: 100%;
+    height: 40px;
+}
+
+.activity-element4 figure{
+    display: flex;
+    flex-wrap: wrap;
+
+} 
+
+.activity-element4 img{
+    width: 100%;
+    height: 250px;
+    border-radius: 20px 20px 0 0px;
+    object-fit: cover;
+}
+
+.activity-element4 figcaption{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    border-radius: 0 0 20px 20px;
+    background-color:blue;
+    width: 100%;
+    height: 40px;
+}
+
+.activity-element5 figure{
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+.activity-element5 img{
+    width: 100%;
+    height: 100px;
+    border-radius: 20px 20px 0 0px;
+    object-fit: cover;
+}
+
+.activity-element5 figcaption{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    border-radius: 0 0 20px 20px;
+    background-color: green;
+    width: 100%;
+    height: 40px;
+}
+
+.activity-element6 figure{
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+.activity-element6 img{
+    width: 100%;
+    height: 100px;
+    border-radius: 20px 20px 0 0px;
+    object-fit: cover;
+}
+
+.activity-element6 figcaption{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    border-radius: 0 0 20px 20px;
+    background-color: goldenrod;
+    width: 100%;
+    height: 40px;
+}
+
+figure{
+    display: flex;
     width: 28%;
     background-color: white;
     padding: 5px;
     margin: 12px;
 }
 
-figcaption{
-    background-color: white;
-    padding-top: 10px;
-}
+/* END PAGE */
 
-footer
-{
+footer{
     background-color:#f2f2f2;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     justify-content: space-around;
-    width: 100%;
+    width: 100%;  
 }
 
