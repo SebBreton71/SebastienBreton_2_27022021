@@ -12,11 +12,11 @@ footer{
     max-width: 1400px;
     margin: 0 auto;
 }
-/* .D-flex{
+.D-flex{
     display: flex;
-} */
+}
 
-/* Header */
+/* HEADER */
 
 #header{
     display: flex;
@@ -59,7 +59,7 @@ nav a:hover{
     color: #0065ff;
 }
 
-/*Form*/
+/*FORM*/
 
 .e-headersubtile{
     font-size: 15px;
