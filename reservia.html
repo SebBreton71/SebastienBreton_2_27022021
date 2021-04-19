@@ -14,14 +14,14 @@
 	</head>
 	<body>
 		<header id="header">
-			<!--logo-->				
+	<!--logo-->				
 				<img src="images/logo/Reservia-logo.png" alt="Logo Reservia"/>				
 	<!--top links-->		
 			<nav class="header-links">
-				<ul>
+				<ul class="D-flex">
 					<li><a class="header-links-element" href="#first-part">Hébergements</a></li>
 					<li><a class="header-links-element" href="#second-part">Activités</a></li>
-					<li class="header-links-element" href="#"><strong style= "color:#0065ff;">S'inscrire</strong></li>
+					<li><a class="header-links-element" href="#"><strong style= "color:#0065ff;">S'inscrire</strong></a></li>
 				</ul>
 			</nav>
 		</header>
@@ -30,7 +30,7 @@
 			<section>
 				<h1 class="e-header">Trouvez votre hébergement pour des vacances de rêve</h1>
                 <h2 class="e-headersubtile">En plein centre ville ou en pleine nature</h2>
-	<!--form-->		
+	<!--FORM-->		
 				<form method="post" action="traitement.php">
 					<div class="form">
 						<i class="fas fa-map-marker-alt"></i>
@@ -38,7 +38,7 @@
 						<input type="submit" value="Rechercher"/>	
 					</div>
 				</form>
-	<!--filter--> 
+	<!--FILTER--> 
 				<div class="filter">
 					<p>Filtres</p>
 					<ul class="filter-elements">
@@ -55,12 +55,12 @@
 			</section>	
 	<!--HOSTING PART-->
 			<section id="first-part">
-				<article id="hosting">
-					<h2>Hébergements à Marseille</h2>
-					<div class="left-frame">
-						<div class="hosting-sheet">							
-							<figure>
-								<a class="hosting-card" href="#">								
+				<div id="hosting">
+					<h2>Hébergements à Marseille</h2> 
+						<div class="left-frame"> 
+						<div class="hosting-sheet">														 
+							<a href="#">
+							<figure>																						
 								<img src="images/cannebière.png" alt="lits superposés Auberge Cannebière Marseille"> 
 								<figcaption>
 									<h4>Auberge la Cannebière</h4> 
@@ -70,10 +70,10 @@
 									<i class="fas fa-star" aria-hidden="true"></i>
 									<i class="fas fa-star" aria-hidden="true"></i>
 									<i class="fas fa-star" style="color:#f2f2f2" aria-hidden="true"></i>
-								</figcaption></a>
-							</figure>
-							<figure>
-								<a class="hosting-card" href="#">
+								</figcaption>
+							</figure></a> 
+							<a href="#">
+							<figure>								
 								<img src="images/hotelduport.png" alt="chambre lit double Hotel du port Marseille">
 								<figcaption>
 									<h4>Hôtel du port</h4> 
@@ -83,10 +83,10 @@
 									<i class="fas fa-star" aria-hidden="true"></i>
 									<i class="fas fa-star" aria-hidden="true"></i>
 									<i class="fas fa-star" aria-hidden="true"></i>
-								</figcaption></a>
-							</figure>
-							<figure>
-								<a class="hosting-card" href="#">
+								</figcaption>
+							</figure></a>
+							<a href="#">
+							<figure>							
 								<img src="images/hlesmouettes.png" alt=" grand lit Hotel Mes Mouettes Marseille">
 								<figcaption>
 									<h4>Hôtel Les mouettes</h4> 
@@ -96,10 +96,10 @@
 									<i class="fas fa-star" aria-hidden="true"></i>
 									<i class="fas fa-star" aria-hidden="true"></i>
 									<i class="fas fa-star" style="color:#f2f2f2" aria-hidden="true"></i>
-								</figcaption></a>
-							</figure>
-							<figure>
-								<a class="hosting-card" href="#">
+								</figcaption>
+							</figure></a>
+							<a href="#">
+							<figure>							
 								<img src="images/hlamer.png" alt="grand lit Hotel de la Mer Marseille">
 								<figcaption>
 									<h4>Hôtel de la mer</h4> 
@@ -109,10 +109,10 @@
 									<i class="fas fa-star" aria-hidden="true"></i>
 									<i class="fas fa-star" style="color:#f2f2f2" aria-hidden="true"></i>
 									<i class="fas fa-star" style="color:#f2f2f2" aria-hidden="true"></i>
-								</figcaption></a>
-							</figure>
-							<figure>
-								<a class="hosting-card" href="#">
+								</figcaption>
+							</figure></a>
+							<a href="#">
+							<figure>							
 								<img src="images/Auberge-le-panier.png" alt="2 lits cabanes superposés Auberge le Panier Marseille">
 								<figcaption>
 									<h4>Auberge le Panier</h4> 
@@ -122,10 +122,10 @@
 									<i class="fas fa-star" aria-hidden="true"></i>
 									<i class="fas fa-star" aria-hidden="true"></i>
 									<i class="fas fa-star" style="color:#f2f2f2" aria-hidden="true"></i>
-								</figcaption></a>
-							</figure>							
-							<figure>
-								<a class="hosting-card" href="#">	
+								</figcaption>
+							</figure></a>							
+							<a href="#">
+							<figure>								
 								<img src="images/Hotel-chez-Amina.png" alt="2 grands lits Hotel chez Amina Marseille">
 								<figcaption>
 									<h4>Hôtel chez Amina</h4>
@@ -135,13 +135,12 @@
 									<i class="fas fa-star" aria-hidden="true"></i>
 									<i class="fas fa-star" aria-hidden="true"></i>
 									<i class="fas fa-star" aria-hidden="true"></i>
-								</figcaption></a>
-							</figure>	
-																																											
+								</figcaption>
+							</figure></a>																																												
 						</div>
 					</div>
 					<p class="show-more-hosting">Afficher plus</p>
-				</article>
+				</div>
 	<!--POPULAR PART-->
 				<aside id="popular">
 					<div class="right-frame"><h2>Les plus populaires<i class="fas fa-chart-line" aria-hidden="true"></i></h2>
