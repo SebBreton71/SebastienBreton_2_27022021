@@ -41,7 +41,7 @@ footer{
 
 .header-links-element:hover:before{
     content: "";
-    width: 100%;
+    width: 100px;
     height: 2px;
     background: #0065ff;
     display: block;
@@ -367,6 +367,7 @@ input{
     height: 450px; 
     max-width: 320px;
     background-color: white;
+    margin: 10px;
 }
 
 .activity-element1 figure{
@@ -399,6 +400,7 @@ input{
     height: 450px; 
     max-width: 320px;
     background-color:white;
+    margin: 10px;
 }
 
 .activity-element2 figure{
@@ -449,6 +451,7 @@ input{
     height: 450px; 
     max-width: 320px;
     background-color:white;
+    margin: 10px;
 }
 
 .activity-element3 figure{
@@ -480,6 +483,7 @@ input{
     height: 450px; 
     max-width: 320px;
     background-color:white;
+    margin: 10px;
 } 
 
 .activity-element4 figure{
