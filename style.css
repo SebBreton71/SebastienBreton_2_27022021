@@ -39,6 +39,9 @@ footer{
     position: relative;
 }
 
+.header-links ul li p{
+    margin:0;
+}
 .header-links-element:hover:before{
     content: "";
     width: 100px;
@@ -98,6 +101,9 @@ input{
     margin-right: -4px;
     padding: 10px 10px;
 }  
+/* .button-icon{
+    border-radius: 10px 10px 10px 10px;
+} */
 
 /* Blue Icon */
 
@@ -554,11 +560,58 @@ footer p{
  
 /*Mobile Screen*/
 
-@media all and (max-width: 1024px){
+@media screen and (max-width: 1024px){
 
-    .header-links ul li{  
-        display: flex;
-        flex-direction: column;
-    }
+        
+    
+        /* .D-flex{
+        display: block;
+        } */
 
+        .button{
+            display:none;
+        }
+        #first-part{
+            display: flex;
+            flex-direction: column-reverse;
+            
+        }
+        .right-frame{
+            width: 100%;
+        }
+        .left-frame{
+            width:100%;
+        }
+        #popular{
+            width: 100%;
+            /* background-color:#f2f2f2;
+            border-radius: 20px;
+            text-align:left;
+            padding-left: 20px;
+            padding-right: 20px; */
+        }
+        .body{
+            width: 100%;
+            margin: 0;
+            
+        }
+        .activities{
+            display:block;
+        }
+        /* .footer{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            margin: auto;
+        } */
+
+       
+}
+
+@media (min-width: 1024px){
+
+        .button-icon{
+            display:none;
+         }
+         
 }
