@@ -20,6 +20,10 @@ footer{
 
 /* HEADER */
 
+#header img{
+    width: 150px;
+}
+
 #header{
     display: flex;
     justify-content: space-between;
@@ -27,13 +31,12 @@ footer{
 }
 
 .header-links{
-    width: 400px;
-    max-width: 400px;
+    width: 100%;
+    max-width:400px;
 }
 
 .header-links ul{  
     justify-content: space-between;
-    list-style: none;
 }
 
 .header-links ul li{
@@ -42,6 +45,8 @@ footer{
 
 .header-links ul li p{
     margin:0;
+    color:#0065ff;
+    font-weight: bold;
 }
 .header-links-element:hover:before{
     content: "";
@@ -56,7 +61,6 @@ footer{
 
 .header-links a{
     color: black;
-    text-decoration: none;
 }
 
 nav a:hover{ 
@@ -142,11 +146,12 @@ input{
     margin-left: 20px;
     list-style: none;
     flex-wrap: wrap;
+    cursor:pointer;
 }
 
-.filter-elements a:hover{
-    background-color: #deebff;
-    color: white;
+.filter-elements a:hover span{
+    border-color: #deebff;
+    color: #deebff;
 }
 
 .filter-element{
@@ -185,13 +190,6 @@ input{
     display:flex;
 }  
 
-#hosting h2{
-    padding-left: 20px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    height: 40px;
-}
-
 #hosting{
     display: flex;
     flex-wrap: wrap;
@@ -215,14 +213,10 @@ input{
     padding-left: 20px;
 }
 
-.left-frame{
-    margin-top: -30px;
-}
 
 .hosting-sheet{  
     display: flex;
     flex-wrap: wrap;
-    background-color:#f2f2f2;
     border-radius: 20px;  
 }
 
@@ -270,27 +264,24 @@ input{
 /* ASIDE SECTION */
 
 #popular{
-    width: 30%;
     background-color:#f2f2f2;
     border-radius: 20px;
-    text-align:left;
     padding-left: 20px;
     padding-right: 20px;
 }
 
 #popular i{
     font-size: 10px;
-    padding-top: 20px;
 }
 
 #popular h2{
-    padding-left: 20px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    margin: 0.83em 12px;
 }
 
 #popular h2 i{
-    padding-left: 90px;
     color: black;
     font-size: 17px;
 }
@@ -300,21 +291,17 @@ input{
 }
 
 .best-popular figure{
-    width: 100%;
-    width: 320px;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    border-radius: 20px;
-    margin-bottom: 30px;
-    box-shadow: 1px 1px 15px rgb(111, 111, 111);
     display: flex;
+    width: 305px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 15px rgb(111, 111, 111);
     background-color: white;
     padding: 5px;
-    margin: 12px;
+    margin: 10px;
 } 
 
 .best-popular figure img{
-    width: 150px;
+    width: 120px;
     height: 130px;
     border-radius: 20px 0 0 20px;
     object-fit: cover;
@@ -324,19 +311,18 @@ input{
     padding-top: 10px;
     padding-left: 20px;
     font-size: 14px;
-    width: 170px;
+    width: 100%;
     height: 120px;
     border-radius: 0 20px 20px 0;
 }
 
 .best-popular a{
     color: inherit;
-    text-decoration: none;
 }
 
 .best-popular p{
-    margin:5px 0 5px 0;
-    padding-bottom: 20px;
+    margin:0 auto;
+    padding-bottom: 40px;
 }
 
 .best-popular h4{
@@ -357,10 +343,7 @@ input{
 
 .activities{
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-between;
-    height: 450px;
+    margin: 0 auto;
 }
 
 .activities h3{
@@ -563,20 +546,23 @@ footer p{
 
 @media screen and (max-width: 1024px){
 
-        nav ul li a{ 
-            margin-top:50px;
-            margin-right:20px;
-            margin-left:20px;
-            display: flex;
-            justify-content: center;
-            font-size: 1.2em;  
-        }
-        #header img{
-            margin-top:-50px;
+        #header{
+            flex-direction: column;
+            align-items: baseline;
+            width:100%;
         }
 
-        .filter p{
-            margin-top:-40px;
+        .header-links{
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .header-links ul{
+            padding: 0 auto;
+        }
+
+        .header-links ul li p{
+            margin-top: -50px;
         }
 
         .button{
@@ -584,8 +570,14 @@ footer p{
         }
         #first-part{
             display: flex;
-            flex-direction: column-reverse;
-            
+            flex-direction: column-reverse;  
+        }
+        #hosting{
+            background-color: white;
+        }
+        #popular{
+            width:100%;
+            padding:0;
         }
         .right-frame{
             width: 100%;
@@ -627,6 +619,12 @@ footer p{
         .button-icon{
             display:none;
          }
+         
+            /* .button-icon.fas.fa-search{
+            background-color: #0065ff;
+            color: white;
+            border-radius: 0px 10px 10px 0px;
+         } */
      
 }
 
