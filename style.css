@@ -354,26 +354,27 @@ input{
     padding: 5px;
 }
 
-.section-two-cards{
+.part-two-cards{
     display: grid;
     grid-template-rows: repeat ( 6, 180px);
     row-gap: 15px;
 }
 
-.section-two img {
+.part-two img {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     height: 140px;
+    width: 100vw;
     object-fit: cover;
     overflow: hidden;
 }
 
-.section-two .card1,
-.section-two .card2,
-.section-two .card3,
-.section-two .card4,
-.section-two .card5,
-.section-two .card6 {
+.part-two .card1,
+.part-two .card2,
+.part-two .card3,
+.part-two .card4,
+.part-two .card5,
+.part-two .card6 {
     background-color: white;
     border-radius: 10px;
     filter: drop-shadow(0 0 4px #ccc);
