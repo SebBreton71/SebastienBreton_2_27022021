@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
-	<!--kit icones-->
+	<!--Kit Icones-->
 		<script src="https://kit.fontawesome.com/f08ae95fa5.js" crossorigin="anonymous"></script>
 	<!--meta et style CSS-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,9 +36,9 @@
 					<div class="form">
 						<i class="fas fa-map-marker-alt"></i>
 						<input type="search" name="button" placeholder="Marseille, France"/>
-						<input class="button" type="submit" value="Rechercher"/>
-						<i class="button-icon fas fa-search" style="background-color: #0065ff;
-						color: white;"></i>	
+						<input  type="button" value="Rechercher" class="close-btn">
+						<button id="searchbutton" type="button" value="rechercher">
+                        <i class="fas fa-search" aria-hidden="true"></i>	
 					</div>
 				</form>
 	<!--FILTER--> 
@@ -51,7 +51,6 @@
 						<li><a class="filter-element"><i class="fas fa-dog"></i><span>Animaux autorisés</span></a></li>
 					</ul>
 				</div>	
-
 				<h2 class="filter-continued"><i class="fas fa-info"></i>
 					 Plus de 500 logements sont disponibles dans cette ville
 				</h2>
@@ -192,80 +191,52 @@
 				</aside>		
 			</section>
 	<!--ACTIVITIES PART-->
-			<section id="second-part">
+			<section class="part-two" id="part-two">
 				<h2>Activités à Marseille</h2>
-				<div class="activities"> 	
-					<div class="activity-element1">
-						<a  href="#">
-							<figure>							 	
+					<div class="part-two-cards"> 	
+						<a  href="#" class="card1">
+							<div class="card-img">							 	
 								<img src="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" 
-									alt="vue de bateaux dans le vieux port Marseille">
-								<figcaption>
+									alt="vue de bateaux dans le vieux port Marseille"/>
+							</div>
 									<h3>Vieux Port</h3>
-								</figcaption> 
-							</figure>
-						</a>					
-					</div>
-					<div class="activity-element2">						
-						<a  href="#">
-							<figure>
-								<div class="pic1">							 	
+						</a>											
+						<a  href="#" class="card2">
+								<div class="card-img">							 	
 									<img src="images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg" 
 										alt="Fort de Pomègues Marseille">
 								</div>
-								<figcaption>
 									<h3>Fort de Pomègues</h3>
-								</figcaption> 
-							</figure>
 						</a>											
-						<a  href="#">
-							<figure>
-								<div class="pic2">							 	
+						<a  href="#" class="card3">
+								<div class="card-img">							 	
 									<img src="images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" 
 										alt="Iles du Frioul Marseille">
 								</div>
-								<figcaption>
 									<h3>Îles du Frioul</h3>
-								</figcaption> 
-							</figure>
 						</a>					
-					</div>
-					<div class="activity-element3">
-						<a href="#">
-							<figure>							 	
-								<img src="images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" 
-								alt="Parc National des Calanques Marseille">
-								<figcaption>
+						<a href="#" class="card4">
+								<div class="card-img">						 	
+									<img src="images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" 
+										alt="Parc National des Calanques Marseille">
+								</div>
 									<h3>Parc National des Calanques</h3>
-								</figcaption> 
-							</figure>
 						</a>					
-					</div>
-					<div class="activity-element4">
-						<a  href="#">
-							<figure>
-								<div class="pic3">							 	
+						<a  href="#" class="card5">
+								<div class="card-img">							 	
 									<img src="images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg" 
 									alt="Notre Dame de la Garde Marseille">
 								</div>
-								<figcaption>
 									<h3>Notre-Dame-de-la-Garde</h3>
-								</figcaption> 
-							</figure>
 						</a>										
-						<a  href="#">
-							<figure>
-								<div class="pic4">							 	
+						<a  href="#" class="card6">
+								<div class="card-img">							 	
 									<img src="images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg" 
 									alt="Parc Longchamps Marseille">
 								</div>
-								<figcaption>
 									<h3>Parc Longchamp</h3>
-								</figcaption> 
-							</figure>
 						</a>					
-					</div>
-				</div>							
+					</div>							
 			</section>
 		</main>		
 	<!--END-PAGE-->
