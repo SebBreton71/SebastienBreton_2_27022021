@@ -528,6 +528,7 @@ footer p{
         }
         .part-two{
             max-width: 700px;
+            max-height: 1400px;
             margin: 0 auto;
         }
         .part-two .card1 {
@@ -603,6 +604,25 @@ footer p{
             right: 0;
             top: 30px;
             border-bottom: none;
+        }
+        .header-links-element:hover:after{
+            content: "";
+            width: 100px;
+            height: 2px;
+            background: #0065ff;
+            display: block; 
+            position: absolute;
+            right: 0;
+        }
+        .header-links-element:hover:before{
+            content: "";
+            width: 100px;
+            height: 2px;
+            background: #0065ff;
+            display: none;
+            position: absolute;
+            top: -20px;
+            left: 0;
         }
 
 /**Button**/
@@ -704,27 +724,30 @@ footer p{
        }
         .part-two .card2 {
            grid-column-start: 1;
-           grid-row-start: 2;
+           grid-row-start: 1;
            max-width:450px;
        }
         .part-two .card3 {
            grid-column-start: 1;
-           grid-row-end: 3;
+           grid-row-start: 2;
+           grid-row-end: 2;
            max-width:450px;
        }
         .part-two .card4 {
            grid-column-start: 1;
-           grid-row-start: 4;
+           grid-row-end: 4;
            max-width:450px;
        }
         .part-two .card5 {
            grid-column-start: 1;
-           grid-row-start: 5;
+            grid-row-start: 4;
+            grid-row-end: 4;
            max-width:450px;
        }
         .part-two .card6 {
            grid-column-start: 1;
-           grid-row-start: 6;
+          grid-row-start: 5;
+          grid-row-end: 5;
            max-width:450px;
        }
        .part-two-cards .card1 .card-img1 img {
