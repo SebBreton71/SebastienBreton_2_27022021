@@ -1,4 +1,4 @@
-/* POLICE */
+/**POLICE**/
 
 *{
     list-style: none;
@@ -6,7 +6,7 @@
     font-family: 'Raleway', sans-serif;
 }
 
-/* GENERAL */
+/**GENERAL**/
 
 html{
     max-width: 1400px;
@@ -18,7 +18,7 @@ html{
     display: flex;
 }
 
-/* HEADER */
+/**HEADER**/
 
 #header img{
     width: 150px;
@@ -67,7 +67,7 @@ nav a:hover{
     color: #0065ff;
 }
 
-/*FORM*/
+/**FORM**/
 
 .e-header{
     margin-bottom: 15px;
@@ -113,9 +113,9 @@ input{
     padding: 10px 10px;
 }
 
-/* FILTER */
+/**FILTER**/
 
-/* Blue Icon */
+/**Blue Icon**/
 
 .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog, .fa-star{
     color: #0065ff;
@@ -187,7 +187,7 @@ input{
     margin-right: 10px;
 }
 
- /* HOSTING PART */
+ /**HOSTING PART**/
 
 #first-part{
     display:flex;
@@ -261,7 +261,7 @@ input{
     padding-left: 20px;
 }
 
-/* ASIDE SECTION */
+/**ASIDE SECTION**/
 
 #popular{
     background-color:#f2f2f2;
@@ -330,7 +330,7 @@ input{
     margin-bottom: 5px;
 }
 
-/* ACTIVITIES SECTION */
+/**ACTIVITIES SECTION**/
 
 .part-two{
     margin-top: 40px;
@@ -348,9 +348,11 @@ input{
     font-size: 0.9em;
     margin: 5px 5px 5px 15px;
  }
+
 .part-two img{
     max-width: 320px;
 }
+
 .part-two .content-card{
     padding: 5px;
 }
@@ -362,7 +364,8 @@ input{
     grid-gap: 10px;
 }
 
-.part-two-cards .card1 .card-img1 img {
+.part-two-cards .card1 .card-img1 img,
+.part-two-cards .card4 .card-img4 img{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     height: 400px;
@@ -371,6 +374,7 @@ input{
     object-position: 10% 50%;
     overflow: hidden;
 }
+
 .part-two-cards .card2 .card-img2 img{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -380,6 +384,7 @@ input{
     object-position: 10% 50%;
     overflow: hidden;
 }
+
 .part-two-cards .card3 .card-img3 img{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -389,24 +394,8 @@ input{
     object-position: 10% 50%;
     overflow: hidden;
 }
-.part-two-cards .card4 .card-img4 img{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    height: 400px;
-    width: 320px;
-    object-fit: cover;
-    object-position: 10% 50%;
-    overflow: hidden;
- }
-.part-two-cards .card5 .card-img5 img{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    height: 170px;
-    width: 320px;
-    object-fit: cover;
-    object-position: 10% 50%;
-    overflow: hidden;
-}
+
+.part-two-cards .card5 .card-img5 img,
 .part-two-cards .card6 .card-img6 img{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -424,6 +413,7 @@ input{
     height: 435px;
     margin: 10px;
 }
+
 .part-two .card2{
     background-color: white;
     border-radius: 10px;
@@ -431,6 +421,7 @@ input{
     height:235px;
     margin: 10px;
 }
+
 .part-two .card3{
     background-color: white;
     border-radius: 10px;
@@ -438,6 +429,7 @@ input{
     height:175px;
     margin:5px 10px 10px 10px;
 }
+
 .part-two .card4{
     background-color: white;
     border-radius: 10px;
@@ -445,6 +437,7 @@ input{
     height:435px;
     margin: 10px;
 }
+
 .part-two .card5{
     background-color: white;
     border-radius: 10px;
@@ -452,6 +445,7 @@ input{
     height:205px;
     margin: 10px;
  }
+
 .part-two .card6{
     background-color: white;
     border-radius: 10px;
@@ -464,32 +458,37 @@ input{
     grid-column-start: 1;
     grid-row-end: span 2;
 }
+
 .part-two .card2 {
     grid-column-start: 2;
     grid-row-start: 1;
     grid-row-end: 1;
 }
+
 .part-two .card3 {
     grid-column-start: 2;
     grid-row-start: 2;
     grid-row-end: 2;
 }
+
 .part-two .card4 {
     grid-column-start: 3;
     grid-row-end: span 2;
 }
+
 .part-two .card5 {
     grid-column-start: 4;
     grid-row-start: 1;
     grid-row-end: 1;
 }
+
 .part-two .card6 {
     grid-column-start: 4;
     grid-row-start: 2;
     grid-row-end: 2;
 }
 
-/* END PAGE */ 
+/**END PAGE**/ 
 
 footer{
     background-color:#f2f2f2;
@@ -513,7 +512,6 @@ footer p{
     padding-top: 20px;
 }
 
-
 /***Responsive Mobile Screen***/
 
 @media screen and (max-width: 1400px){
@@ -526,39 +524,46 @@ footer p{
             grid-template-rows: 1fr 1fr 1fr 1fr;
             grid-gap: 10px;
         }
+
         .part-two{
             max-width: 700px;
             max-height: 1400px;
             margin: 0 auto;
         }
+
         .part-two .card1 {
             grid-column-start: 1;
             grid-row-end: span 2;
             max-width:320px;
         }
+
         .part-two .card2 {
             grid-column-start: 2;
             grid-row-start: 1;
             grid-row-end: 1;
             max-width:320px;
         }
+
         .part-two .card3 {
             grid-column-start: 2;
             grid-row-start: 2;
             grid-row-end: 2;
             max-width:320px;
          }
+
         .part-two .card4 {
             grid-column-start: 1;
             grid-row-end: span 2;
             max-width:320px;
          }
+
         .part-two .card5 {
             grid-column-start: 2;
             grid-row-start: 3;
             grid-row-end: 3;
              max-width:320px;
         }
+
         .part-two .card6 {
             grid-column-start: 2;
             grid-row-start: 4;
@@ -570,7 +575,7 @@ footer p{
 
 @media screen and (max-width: 1024px){
 
-/**Header**/
+/***Header***/
 
 
         #header{
@@ -605,6 +610,7 @@ footer p{
             top: 30px;
             border-bottom: none;
         }
+
         .header-links-element:hover:after{
             content: "";
             width: 100px;
@@ -614,18 +620,12 @@ footer p{
             position: absolute;
             right: 0;
         }
+
         .header-links-element:hover:before{
-            content: "";
-            width: 100px;
-            height: 2px;
-            background: #0065ff;
             display: none;
-            position: absolute;
-            top: -20px;
-            left: 0;
         }
 
-/**Button**/
+/***Button***/
 
         .close-btn{
             display:none;
@@ -638,15 +638,17 @@ footer p{
             cursor: pointer;
         }
 
-/**Hosting Part**/
+/***Hosting Part***/
         
         #first-part{
             display: flex;
             flex-direction: column-reverse;  
         }
+
         #hosting h2{
             margin: 0.83em 12px;
         }
+
         #hosting{
             display: flex;
             flex-wrap: wrap;
@@ -655,36 +657,41 @@ footer p{
             margin: 20px 0 0 0;
             padding: 0px;
         }
+
         .hosting-sheet figure{
             min-width: 275x;            
         } 
 
-/**Popular Part**/
+/***Popular Part***/
 
         #popular{
             width:100%;
             padding:0;
         }
+
         #popular h2{
             margin: 0;
         }
+
         .best-popular{
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
         }
+
         .best-popular figure{
             width: 275px;
         } 
 
-/**End Page**/
+/***End Page***/
 
        #footer{
             background-color:#f2f2f2;
             display: flex;
             flex-direction:column;
             text-align: center;
-        }   
+        }
+
         .footer-column2{
             margin: 0;
             padding-top: 20px;
@@ -693,12 +700,11 @@ footer p{
 
 @media screen and (min-width: 1025px){
 
-/**Button**/
+/***Button***/
 
         #searchbutton{
-        display: none;
-        }
-     
+            display: none;
+        }     
     }
 
 @media screen and (max-width: 699px){
@@ -709,93 +715,62 @@ footer p{
             max-width: 450px;
             margin: 0 auto;
         }
+
         .part-two-cards{
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
             grid-gap: 10px;
         }
+
         .part-two img{
             max-width: 450px;
         }
+
         .part-two .card1 {
             grid-column-start: 1;
             grid-row-end: 1;
             max-width:450px;
        }
+
         .part-two .card2 {
            grid-column-start: 1;
            grid-row-start: 1;
            max-width:450px;
        }
+
         .part-two .card3 {
            grid-column-start: 1;
            grid-row-start: 2;
            grid-row-end: 2;
            max-width:450px;
        }
+
         .part-two .card4 {
            grid-column-start: 1;
            grid-row-end: 4;
            max-width:450px;
        }
+
         .part-two .card5 {
            grid-column-start: 1;
             grid-row-start: 4;
             grid-row-end: 4;
            max-width:450px;
        }
+
         .part-two .card6 {
            grid-column-start: 1;
           grid-row-start: 5;
           grid-row-end: 5;
            max-width:450px;
        }
-       .part-two-cards .card1 .card-img1 img {
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-            height: 170px;
-            width: 450px;
-            object-fit: cover;
-            object-position: 10% 50%;
-            overflow: hidden;
-        }
-        .part-two-cards .card2 .card-img2 img{
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-            height: 170px;
-            width: 450px;
-            object-fit: cover;
-            object-position: 10% 50%;
-            overflow: hidden;
-        }
-        .part-two-cards .card3 .card-img3 img{
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-            height: 170px;
-            width: 450px;
-            object-fit: cover;
-            object-position: 10% 50%;
-            overflow: hidden;
-        }
-        .part-two-cards .card4 .card-img4 img{
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-            height: 170px;
-            width: 450px;
-            object-fit: cover;
-            object-position: 10% 50%;
-            overflow: hidden;
-        }
-        .part-two-cards .card5 .card-img5 img{
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-            height: 170px;
-            width: 450px;
-            object-fit: cover;
-            object-position: 10% 50%;
-            overflow: hidden;
-        }
+
+       .part-two-cards .card1 .card-img1 img,
+        .part-two-cards .card2 .card-img2 img,
+        .part-two-cards .card3 .card-img3 img,
+        .part-two-cards .card4 .card-img4 img,
+        .part-two-cards .card5 .card-img5 img,
         .part-two-cards .card6 .card-img6 img{
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
@@ -805,155 +780,97 @@ footer p{
             object-position: 10% 50%;
             overflow: hidden;
         }
- 
-        .part-two .card1{
+        
+        .part-two .card1,
+        .part-two .card2,
+        .part-two .card3,
+        .part-two .card4,
+        .part-two .card5,
+        .part-two .card6{
             background-color: white;
             border-radius: 10px;
             filter: drop-shadow(0 0 4px #ccc);
             height: 200px;
             margin: 10px;
         }
-         .part-two .card2{
-            background-color: white;
-            border-radius: 10px;
-            filter: drop-shadow(0 0 4px #ccc);
-            height:200px;
-            margin: 10px;
-        }
-        .part-two .card3{
-            background-color: white;
-            border-radius: 10px;
-            filter: drop-shadow(0 0 4px #ccc);
-            height:200px;
-            margin: 10px;
-        }
-        .part-two .card4{
-            background-color: white;
-            border-radius: 10px;
-            filter: drop-shadow(0 0 4px #ccc);
-            height:200px;
-            margin: 10px;
-        }
-        .part-two .card5{
-            background-color: white;
-            border-radius: 10px;
-            filter: drop-shadow(0 0 4px #ccc);
-            height:200px;
-            margin: 10px;
-        }
-        .part-two .card6{
-            background-color: white;
-            border-radius: 10px;
-            filter: drop-shadow(0 0 4px #ccc);
-            height:200px;
-            margin: 10px;
-        }
-
     }
 
 @media screen and (max-width: 570px){
 
+/***Filter***/
+
         .filter p{
             margin-top:-60px;
         }
-
     }
+
 @media screen and (max-width: 499px){
 
-    .filter p{
-        margin-top:-100px;
-    }
+/***Filter***/
 
-    .part-two img{
-        max-width: 350px;
-    }
-    .part-two .card1 {
-        grid-column-start: 1;
-        grid-row-end: 1;
-        max-width:350px;
-   }
-    .part-two .card2 {
-       grid-column-start: 1;
-       grid-row-start: 1;
-       max-width:350px;
-   }
-    .part-two .card3 {
-       grid-column-start: 1;
-       grid-row-start: 2;
-       grid-row-end: 2;
-       max-width:350px;
-   }
-    .part-two .card4 {
-       grid-column-start: 1;
-       grid-row-end: 4;
-       max-width:350px;
-   }
-    .part-two .card5 {
-       grid-column-start: 1;
-        grid-row-start: 4;
-        grid-row-end: 4;
-       max-width:350px;
-   }
-    .part-two .card6 {
-       grid-column-start: 1;
-      grid-row-start: 5;
-      grid-row-end: 5;
-       max-width:350px;
-   }
-   .part-two-cards .card1 .card-img1 img {
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        height: 170px;
-        width: 350px;
-        object-fit: cover;
-        object-position: 10% 50%;
-        overflow: hidden;
-    }
-    .part-two-cards .card2 .card-img2 img{
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        height: 170px;
-        width: 350px;
-        object-fit: cover;
-        object-position: 10% 50%;
-        overflow: hidden;
-    }
-    .part-two-cards .card3 .card-img3 img{
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        height: 170px;
-        width: 350px;
-        object-fit: cover;
-        object-position: 10% 50%;
-        overflow: hidden;
-    }
-    .part-two-cards .card4 .card-img4 img{
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        height: 170px;
-        width: 350px;
-        object-fit: cover;
-        object-position: 10% 50%;
-        overflow: hidden;
-    }
-    .part-two-cards .card5 .card-img5 img{
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        height: 170px;
-        width: 350px;
-        object-fit: cover;
-        object-position: 10% 50%;
-        overflow: hidden;
-    }
-    .part-two-cards .card6 .card-img6 img{
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        height: 170px;
-        width: 350px;
-        object-fit: cover;
-        object-position: 10% 50%;
-        overflow: hidden;
-    }
+        .filter p{
+            margin-top:-100px;
+        }
+
+/***Activities***/
+
+        .part-two img{
+            max-width: 350px;
+        }
+
+        .part-two .card1 {
+            grid-column-start: 1;
+            grid-row-end: 1;
+            max-width:350px;
+        }
+
+        .part-two .card2 {
+            grid-column-start: 1;
+            grid-row-start: 1;
+            max-width:350px;
+        }
+
+        .part-two .card3 {
+            grid-column-start: 1;
+            grid-row-start: 2;
+            grid-row-end: 2;
+            max-width:350px;
+        }
+
+        .part-two .card4 {
+            grid-column-start: 1;
+            grid-row-end: 4;
+            max-width:350px;
+        }
+
+        .part-two .card5 {
+            grid-column-start: 1;
+            grid-row-start: 4;
+            grid-row-end: 4;
+            max-width:350px;
+        }
+
+        .part-two .card6 {
+            grid-column-start: 1;
+            grid-row-start: 5;
+            grid-row-end: 5;
+            max-width:350px;
+        }
+
+        .part-two-cards .card1 .card-img1 img,
+        .part-two-cards .card2 .card-img2 img,
+        .part-two-cards .card3 .card-img3 img,
+        .part-two-cards .card4 .card-img4 img,
+        .part-two-cards .card5 .card-img5 img,
+        .part-two-cards .card6 .card-img6 img{
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            height: 170px;
+            width: 350px;
+            object-fit: cover;
+            object-position: 10% 50%;
+            overflow: hidden;
+        }       
 }
 
         
