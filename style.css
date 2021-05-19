@@ -21,6 +21,7 @@ header, body, main{
 
 #header img{
     width: 150px;
+    margin-left:15px;
 }
 
 #header{
@@ -71,12 +72,14 @@ nav a:hover{
 
 .e-header{
     margin-bottom: 15px;
+    margin-left: 15px;
 }
 
 .e-headersubtile{
     font-size: 15px;
     font-weight: lighter;
     margin-top: 5px;
+    margin-left: 15px;
 }
 
 input[value="Rechercher"]{
@@ -102,7 +105,8 @@ input{
     background-color: #f2f2f2;
     border-radius: 10px 0px 0px 10px; 
     margin-right: -4px;
-    padding: 10px 10px;
+    margin-left: 15px;
+    padding: 12px 10px;
 } 
 
 .fa-search{
@@ -110,7 +114,8 @@ input{
     color:#f2f2f2;
     background-color: #0065ff;
     border-radius: 0px 10px 10px 0px;
-    padding: 10px 10px;
+    padding: 12px 10px;
+    margin-left: -10px;
 }
 
 /**FILTER**/
@@ -125,6 +130,7 @@ input{
    display: flex;
    font-size: 17px;
    align-items: center;
+   margin-left: 15px;
 }
 
 .filter p, span{
@@ -141,6 +147,9 @@ input{
     height: 16px;
     display:inline-flex;
     justify-content: center;
+    position: absolute;
+    left: -13px;
+    top: -3px;
 }
 
 .filter-elements{
@@ -154,6 +163,13 @@ input{
 
 .filter-elements li{
     margin: 15px;
+    position: relative;
+    border: 3px solid #f2f2f2;
+    border-left: none;
+    padding: 8px 18px 8px 35px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-left: 25px;
 }
 
 .filter-elements a:hover span{
@@ -165,19 +181,11 @@ input{
     margin-right: 20px;
 }
 
-.filter-element span{
-    border: 3px solid #f2f2f2;
-    border-left: none;
-    padding: 9px 17px 9px 17px;
-    margin-left: -10px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-
 .filter-continued{
     font-size: 15px;
     font-weight: lighter;
     margin-bottom: 30px;
+    margin-left: 15px;
 }
 
 .filter-continued i{
@@ -267,6 +275,10 @@ input{
 
 /**ASIDE SECTION**/
 
+.right-frame{
+    padding: 10px 20px;
+}
+
 #popular{
     background-color:#f2f2f2;
     border-radius: 20px;
@@ -281,7 +293,7 @@ input{
 #popular h2{
     display:flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0.83em 12px;
 }
 
@@ -377,7 +389,6 @@ input{
     object-position: 10% 50%;
     overflow: hidden;
 }
-
 
 .part-two-cards .card1 .card-img1 img,
 .part-two-cards .card4 .card-img4 img{
@@ -561,7 +572,6 @@ footer p{
 
 /***Header***/
 
-
         #header{
             flex-direction: column;
             align-items: baseline;
@@ -595,7 +605,7 @@ footer p{
 
         .header-links ul li:nth-child(3){
             position: absolute;
-            right: -40px;
+            right: 0px;
             top: 30px;
             border-bottom: none;
         }
@@ -630,19 +640,36 @@ footer p{
         .filter p{
             margin-top:20px;
         }
-
-        .filter-elements{
-            display: block;
-            margin-left: 0;
-            padding-left: 0;
-        }
-
-/***Hosting Part***/
         
         #first-part{
             display: flex;
             flex-direction: column-reverse;  
         }
+
+/***Popular Part***/
+
+        #popular{
+            width:100%;
+            padding:0;
+            border-radius:0;
+        }
+
+        #popular h2{
+            display: flex;
+            margin: 0;
+        }
+
+        .best-popular{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .best-popular figure{
+            width: 275px;
+        } 
+
+/***Hosting Part***/
 
         #hosting h2{
             margin: 0.83em 12px;
@@ -659,30 +686,6 @@ footer p{
 
         .hosting-sheet figure{
             min-width: 275px;            
-        } 
-
-/***Popular Part***/
-
-        #popular{
-            width:105%;
-            padding:0;
-            border-radius:0;
-        }
-
-        #popular h2{
-            display: flex;
-            justify-content: space-around;
-            margin: 0;
-        }
-
-        .best-popular{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .best-popular figure{
-            width: 275px;
         } 
 
 /***End Page***/
@@ -704,7 +707,7 @@ footer p{
 
 /***Button***/
 
-        #searchbutton{
+        .fa-search, #searchbutton{
             display: none;
         }     
     }
@@ -718,7 +721,8 @@ footer p{
         }
 
         .hosting-sheet a {
-            width: 420px;
+            width: auto;
+            margin: 0 auto;
         }
 
         .hosting-sheet figure{
@@ -820,12 +824,12 @@ footer p{
         }
 
         .header-links{
-            margin-top: 40px;
+            margin-top: 20px;
         }
 
         .header-links ul li:nth-child(3){
             position: absolute;
-            right: -40px;
+            right: 0px;
             top: 10px;
             border-bottom: none;
         }
@@ -844,24 +848,33 @@ footer p{
             margin-top:20px;
         }
 
+        .filter-elements li{
+            margin: 0 30px 10px -45px;
+            position: relative;
+            border: 3px solid #f2f2f2;
+            border-left: none;
+            padding: 8px 18px 8px 35px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
         .filter-elements{
-            display: block;
-            margin-left: 0;
-            padding-left: 0;
+            margin-left: 20px;
+            margin-right: -20px;
         }
 
 /***Hosting***/
 
         .hosting-sheet figure{
-            width: 350px;
-            margin: 12px 0 12px 40px;          
+            width: 320px;
+            margin: 12px 0 12px 0;          
         }
 
 /***Popular***/
 
         .best-popular figure{
-            width: 350px;
-            margin: 12px 0 12px 70px;
+            width: 320px;
+            margin: 12px 0 12px 0;
         }
 
 /***Activities***/
@@ -869,7 +882,7 @@ footer p{
         .part-two img, .part-two .card1, .part-two .card2, 
         .part-two .card3, .part-two .card4, 
         .part-two .card5, .part-two .card6{
-            max-width: 350px;
+            max-width: 320px;
         }
 
         .part-two .card1 {
@@ -910,7 +923,7 @@ footer p{
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
             height: 170px;
-            width: 350px;
+            width: 320px;
             object-fit: cover;
             object-position: 10% 50%;
             overflow: hidden;
