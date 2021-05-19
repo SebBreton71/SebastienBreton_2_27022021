@@ -8,7 +8,7 @@
 
 /**GENERAL**/
 
-html{
+header, body, main{
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -497,7 +497,7 @@ footer p{
     padding-top: 20px;
 }
 
-/***Responsive Mobile Screen***/
+/*******Responsive Mobile Screen*******/
 
 @media screen and (max-width: 1400px){
 
@@ -664,7 +664,7 @@ footer p{
 /***Popular Part***/
 
         #popular{
-            width:100%;
+            width:105%;
             padding:0;
             border-radius:0;
         }
@@ -717,6 +717,10 @@ footer p{
             margin: 0 auto;
         }
 
+        .hosting-sheet a {
+            width: 420px;
+        }
+
         .hosting-sheet figure{
             width: 450px;            
         }
@@ -724,12 +728,8 @@ footer p{
 /***Popular***/
 
         .best-popular figure{
+            margin: 12px 0 12px 0px;
             width: 450px;
-        }
-
-        .hosting-sheet a {
-            width: 420px;
-            margin-right: 30px;
         }
 
 /***Activities***/
