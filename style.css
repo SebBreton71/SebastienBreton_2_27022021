@@ -178,7 +178,7 @@ input{
 }
 
 .filter-element{
-    margin-right: 20px;
+    margin-right: 0px;
 }
 
 .filter-continued{
@@ -849,7 +849,7 @@ footer p{
         }
 
         .filter-elements li{
-            margin: 0 30px 10px -45px;
+            margin: 0 30px 10px 0px;
             position: relative;
             border: 3px solid #f2f2f2;
             border-left: none;
@@ -859,8 +859,9 @@ footer p{
         }
 
         .filter-elements{
-            margin-left: 20px;
-            margin-right: -20px;
+            justify-content: start;
+            margin-left: 15px;
+            padding-left: 0;
         }
 
 /***Hosting***/
