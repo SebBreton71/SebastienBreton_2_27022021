@@ -293,8 +293,7 @@ input{
 #popular h2{
     display:flex;
     align-items: center;
-    justify-content: space-around;
-    margin: 0.83em 12px;
+    justify-content: space-between;
 }
 
 #popular h2 i{
@@ -656,7 +655,7 @@ footer p{
 
         #popular h2{
             display: flex;
-            margin: 0;
+            margin-left: -5px;
         }
 
         .best-popular{
@@ -717,7 +716,7 @@ footer p{
 /***Hosting***/
 
         #hosting h2{
-            margin: 0 auto;
+            margin-left: 15px;
         }
 
         .hosting-sheet a {
