@@ -419,14 +419,18 @@ input{
     filter: drop-shadow(0 0 4px #ccc);
 }
 
-.part-two .card1{
-    height: 435px;
+.part-two .card1, .part-two .card2,
+.part-two .card4, .part-two .card5{
     margin: 10px;
+}
+
+.part-two .card1, .part-two .card4{
+    height: 435px;
+    grid-row-end: span 2;
 }
 
 .part-two .card2{
     height:235px;
-    margin: 10px;
 }
 
 .part-two .card3{
@@ -434,53 +438,35 @@ input{
     margin:5px 10px 10px 10px;
 }
 
-.part-two .card4{
-    height:435px;
-    margin: 10px;
-}
-
-.part-two .card5{
+.part-two .card5, .part-two .card6{
     height:205px;
-    margin: 10px;
+    grid-column-start: 4;
  }
 
 .part-two .card6{
-    height:205px;
     margin: -25px 10px 10px 10px;
 }
    
-.part-two .card1 {
-    grid-column-start: 1;
-    grid-row-end: span 2;
+.part-two .card1{
+    grid-column-start: 1;  
 }
 
-.part-two .card2 {
-    grid-column-start: 2;
+.part-two .card2, .part-two .card3{
+    grid-column-start: 2;   
+}
+
+.part-two .card2, .part-two .card5{
     grid-row-start: 1;
     grid-row-end: 1;
 }
 
-.part-two .card3 {
-    grid-column-start: 2;
+.part-two .card3, .part-two .card6{
     grid-row-start: 2;
     grid-row-end: 2;
 }
 
-.part-two .card4 {
+.part-two .card4{
     grid-column-start: 3;
-    grid-row-end: span 2;
-}
-
-.part-two .card5 {
-    grid-column-start: 4;
-    grid-row-start: 1;
-    grid-row-end: 1;
-}
-
-.part-two .card6 {
-    grid-column-start: 4;
-    grid-row-start: 2;
-    grid-row-end: 2;
 }
 
 /**END PAGE**/ 
@@ -532,36 +518,31 @@ footer p{
             max-width: 320px;
         }
 
-        .part-two .card1 {
+        .part-two .card1, .part-two .card4{
             grid-column-start: 1;
             grid-row-end: span 2;
         }
 
-        .part-two .card2 {
+        .part-two .card2, .part-two .card3, .part-two .card5, .part-two .card6{
             grid-column-start: 2;
+        } 
+
+        .part-two .card2{ 
             grid-row-start: 1;
             grid-row-end: 1;
         }
 
-        .part-two .card3 {
-            grid-column-start: 2;
+        .part-two .card3{
             grid-row-start: 2;
             grid-row-end: 2;
          }
 
-        .part-two .card4 {
-            grid-column-start: 1;
-            grid-row-end: span 2;
-         }
-
-        .part-two .card5 {
-            grid-column-start: 2;
+        .part-two .card5{
             grid-row-start: 3;
             grid-row-end: 3;
         }
 
-        .part-two .card6 {
-            grid-column-start: 2;
+        .part-two .card6{
             grid-row-start: 4;
             grid-row-end: 4;
         }
@@ -755,35 +736,34 @@ footer p{
             max-width: 450px;
         }
 
-        .part-two .card1 {
+        .part-two .card1, .part-two .card2, .part-two .card3,
+        .part-two .card4, .part-two .card5, .part-two .card6{
             grid-column-start: 1;
+        }
+
+        .part-two .card1{
             grid-row-end: 1;
        }
 
-        .part-two .card2 {
-            grid-column-start: 1;
+        .part-two .card2{
             grid-row-start: 1;
        }
 
-        .part-two .card3 {
-            grid-column-start: 1;
+        .part-two .card3{
             grid-row-start: 2;
             grid-row-end: 2;
        }
 
-        .part-two .card4 {
-            grid-column-start: 1;
+        .part-two .card4{
             grid-row-end: 4;
        }
 
-        .part-two .card5 {
-            grid-column-start: 1;
+        .part-two .card5{
             grid-row-start: 4;
             grid-row-end: 4;
        }
 
-        .part-two .card6 {
-            grid-column-start: 1;
+        .part-two .card6{
             grid-row-start: 5;
             grid-row-end: 5;
         }
@@ -885,35 +865,34 @@ footer p{
             max-width: 320px;
         }
 
-        .part-two .card1 {
+        .part-two .card1, .part-two .card2, .part-two .card3,
+        .part-two .card4, .part-two .card5, .part-two .card6{
             grid-column-start: 1;
+        }
+
+        .part-two .card1{
             grid-row-end: 1;
         }
 
-        .part-two .card2 {
-            grid-column-start: 1;
+        .part-two .card2{
             grid-row-start: 1
         }
 
-        .part-two .card3 {
-            grid-column-start: 1;
+        .part-two .card3{
             grid-row-start: 2;
             grid-row-end: 2;
         }
 
-        .part-two .card4 {
-            grid-column-start: 1;
+        .part-two .card4{
             grid-row-end: 4;
         }
 
-        .part-two .card5 {
-            grid-column-start: 1;
+        .part-two .card5{
             grid-row-start: 4;
             grid-row-end: 4;
         }
 
-        .part-two .card6 {
-            grid-column-start: 1;
+        .part-two .card6{
             grid-row-start: 5;
             grid-row-end: 5;
         }
